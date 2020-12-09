@@ -26,6 +26,10 @@ const map = (): Map<BinarySensorTypes, BinarySensorHomekit> => {
             characteristic: Characteristic.MotionDetected,
             service: Service.MotionSensor,
         }],
+        [BinarySensorTypes.OCCUPANCY, {
+            characteristic: Characteristic.MotionDetected,
+            service: Service.MotionSensor,
+        }],
         [BinarySensorTypes.WINDOW, {
             characteristic: Characteristic.ContactSensorState,
             service: Service.ContactSensor,
